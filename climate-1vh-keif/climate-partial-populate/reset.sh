@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# SEE THE NEIGHBORING .bat FILE!
+#
+# (This script runs the commands in that.)
+
+# Script to filter comments out of a Windows .bat file and then run
+# the remaining text as commands. This makes it easier to share simple
+# scripts between operating systems.
+
+# Usage:
+#
+# If run without arguments, this runs the script of the same name as
+# this but with a .bat extension.
+#
+# If run with an argument, processes the first argument as a script.
+
+if [ $# -ne 0 ] ; then
+    SCRIPT=$1
+else
+    SCRIPT=$(basename "$0" | sed 's/\.sh$/.bat/')
+fi
+
+LINENUMBER=0
+# extra echo in case script doesn't end in a newline:
+(cat "$SCRIPT"; echo) | tr -d \\015 | while read LINE; do
+    ((LINENUMBER++))
+
+    CMD=$(echo $LINE | sed -E -e 's/^\s*@?REM[ 	].*//'  -e 's/^\s*::.*//' -e 's/^\s+//')
+    if [ ! -z "$CMD" ]; then
+	echo + $CMD
+	$CMD || echo "- Command '${CMD}' failed: exit code $? in ${SCRIPT} line ${LINENUMBER}"
+    fi
+done
+

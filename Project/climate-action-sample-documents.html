@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Steven Conger" />
+  <meta name="author" content="Kit Transue" />
+  <title>Climate Change Database Sample Documents</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Climate Change Database Sample Documents</h1>
+<p class="subtitle">IT 120 - Databases</p>
+<p class="author">Steven Conger</p>
+<p class="author">Kit Transue</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#sample-documents">Sample Documents</a></li>
+<li><a href="#members">Members</a></li>
+<li><a href="#merchandise">Merchandise</a></li>
+<li><a href="#sales">Sales</a></li>
+<li><a href="#donations">Donations</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#comments">Comments</a></li>
+</ul>
+</nav>
+<h1 id="sample-documents">Sample Documents</h1>
+<p>Existing documents provide insight into both requirements and
+existing processes. Below is an example of the documents that might have
+been collected during interviews with an imagined grassroots
+organization interested in climate change.</p>
+<!-- FIXME: should dates be converted to ISO 8601? -->
+<h1 id="members">Members</h1>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Member Name</strong></td>
+<td style="text-align: left;"><strong>Email</strong></td>
+<td style="text-align: left;"><strong>Phone</strong></td>
+<td style="text-align: left;"><strong>Date added</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Jill Keller</td>
+<td style="text-align: left;">JillKileer@gmail.com</td>
+<td style="text-align: left;">2065551245</td>
+<td style="text-align: left;">3/29/2019</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mark Lowen</td>
+<td style="text-align: left;">lowen@msn.com</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">4/19/2020</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Wendy Nelson</td>
+<td style="text-align: left;">wnelson@yahoo.com</td>
+<td style="text-align: left;">4565551265</td>
+<td style="text-align: left;">5/1/2020</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Krystal Brown</td>
+<td style="text-align: left;">krystalball@hotmail.com</td>
+<td style="text-align: left;">9045552211</td>
+<td style="text-align: left;">5/20/2021</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Bob Danielson</td>
+<td style="text-align: left;">bd2035@gmail.com</td>
+<td style="text-align: left;">3605552030</td>
+<td style="text-align: left;">6/10/2020</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ta Nguyen</td>
+<td style="text-align: left;">tnguyen304@gmail.com</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">7/12/2020</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Nichole Bradley</td>
+<td style="text-align: left;">nicholeb@harvest.org</td>
+<td style="text-align: left;">2225552323</td>
+<td style="text-align: left;">7/15/2020</td>
+</tr>
+</tbody>
+</table>
+<h1 id="merchandise">Merchandise</h1>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Name</strong></td>
+<td style="text-align: left;"><strong>Description</strong></td>
+<td style="text-align: left;"><strong>Units</strong></td>
+<td style="text-align: left;"><strong>Price per unit</strong></td>
+<td style="text-align: left;"><strong>Quantity</strong></td>
+<td style="text-align: left;"><strong>Date entered</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Earth Rise T-Shirt</td>
+<td style="text-align: left;">T-shirt with earth rising over moon</td>
+<td style="text-align: left;">1 T-Shirt</td>
+<td style="text-align: left;">15.50</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;">2/15/2020</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Earth Rise Puzzle</td>
+<td style="text-align: left;">1000 piece jigsaw puzzle of earth rising
+over moon</td>
+<td style="text-align: left;">1 box</td>
+<td style="text-align: left;">9.35</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">3/1/2020</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Endangered Habitats</td>
+<td style="text-align: left;">Tabletop book</td>
+<td style="text-align: left;">1 book</td>
+<td style="text-align: left;">35.30</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">3/1/2020</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Last Views</td>
+<td style="text-align: left;">4k UHD documentary on endangered
+species</td>
+<td style="text-align: left;">1 disc</td>
+<td style="text-align: left;">23.90</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">4/12/2020</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Call to Action</td>
+<td style="text-align: left;">Book on climate change action</td>
+<td style="text-align: left;">1 book</td>
+<td style="text-align: left;">6.45</td>
+<td style="text-align: left;">30</td>
+<td style="text-align: left;">4/15/2020</td>
+</tr>
+</tbody>
+</table>
+<h1 id="sales">Sales</h1>
+<!-- Adapted to 1NF violation -->
+<!-- Interacts with "Merchandise update date": keep those in sync -->
+<table style="width:99%;">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 18%" />
+<col style="width: 7%" />
+<col style="width: 10%" />
+<col style="width: 8%" />
+<col style="width: 10%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Name</strong></td>
+<td style="text-align: left;"><strong>email</strong></td>
+<td style="text-align: left;"><strong>Item</strong></td>
+<td style="text-align: left;"><strong>Quantity</strong></td>
+<td style="text-align: left;"><strong>Item2</strong></td>
+<td style="text-align: center;"><strong>Quantity2</strong></td>
+<td style="text-align: left;"><strong>Billing address</strong></td>
+<td style="text-align: left;"><strong>Shipping address</strong></td>
+<td style="text-align: left;"><strong>Date ordered</strong></td>
+<td style="text-align: left;"><strong>Date shipped</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Lindsey Peterson</td>
+<td style="text-align: left;">lp@msn.com</td>
+<td style="text-align: left;">Earth Rise puzzle</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Earth Rise T-shirt</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">161 Brown Street, Chicago, IL, 80092</td>
+<td style="text-align: left;">same</td>
+<td style="text-align: left;">10/2/2020</td>
+<td style="text-align: left;">10/4/2020</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Krystal Brown</td>
+<td style="text-align: left;">Krystalball@hotmail.com</td>
+<td style="text-align: left;">Earth rise T-shirt</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">303 South Market<br />
+Seattle, WA, 98112</td>
+<td style="text-align: left;">120 Pine Street<br />
+Seattle, WA 98122</td>
+<td style="text-align: left;">10/09/2020</td>
+<td style="text-align: left;">10/12/2019</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Marcus Tellerman</td>
+<td style="text-align: left;">mtellerman@yahoo.com</td>
+<td style="text-align: left;">last views</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;">2020 North Street<br />
+San Francisco, CA. 99122</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">10/30/2020</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="donations">Donations</h1>
+<!-- total donations > $20 should promote to member. Have at least one require SUM/group -->
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Name</strong></td>
+<td style="text-align: left;"><strong>Email</strong></td>
+<td style="text-align: left;"><strong>Date</strong></td>
+<td style="text-align: left;"><strong>Amount</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Hamid Brown</td>
+<td style="text-align: left;">hamidb@outlook.com</td>
+<td style="text-align: left;">8/14/2020</td>
+<td style="text-align: left;">10.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ha Li</td>
+<td style="text-align: left;">hali@gmail.com</td>
+<td style="text-align: left;">10/15/2020</td>
+<td style="text-align: left;">200.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ken Jackson</td>
+<td style="text-align: left;">kj202@yahoo.com</td>
+<td style="text-align: left;">10/15/2020</td>
+<td style="text-align: left;">15.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Wendy Nelson</td>
+<td style="text-align: left;">windynelson@morningstar.org</td>
+<td style="text-align: left;">10/16/2020</td>
+<td style="text-align: left;">135.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ken Jackson</td>
+<td style="text-align: left;">kj202@yahoo.com</td>
+<td style="text-align: left;">3/2/2022</td>
+<td style="text-align: left;">15.00</td>
+</tr>
+</tbody>
+</table>
+<h1 id="events">Events</h1>
+<!-- FIXME: initial requirements says members suggest these, but sample
+data doesn't show who. Question for customer? -->
+<p>Convention on Climate Policy<br />
+Room 313<br />
+Convention Center<br />
+200 Pike Street<br />
+Seattle, WA, 98122<br />
+December 3rd 2022</p>
+<p>Price 250.00 per attendee</p>
+<hr />
+<p>UN Report on Climate Progress<br />
+UN Convention House 2<br />
+UN Plaza<br />
+New York, NY, 00231<br />
+January 13,2022</p>
+<p>Price Free, but limited seats</p>
+<h1 id="resources">Resources</h1>
+<p>Partnership for Energy progress</p>
+<p><a href="https://www.pepnw.org/about-us/" class="uri">https://www.pepnw.org/about-us/</a></p>
+<p>The Partnership for Energy Progress is a collaboration of utilities,
+farmers, workers, small and large businesses, and community advocates
+across the Northwest. Our goal is to communicate the work we do to
+provide reliable, affordable energy to homes and businesses, and
+highlight the progress we’re making to address climate change.</p>
+<p>Date added: 9/12/2020</p>
+<p>Member who added: Jill Keller</p>
+<hr />
+<p>Siemens Company</p>
+<p><a href="https://new.siemens.com/us/en/company/sustainability/environmental-action.html" class="uri">https://new.siemens.com/us/en/company/sustainability/environmental-action.html</a></p>
+<p>Siemens is supporting the Decade of Action to accelerate the adoption
+of sustainable technologies so our customers, our communities and our
+employees can lead the U.S. towards a low-carbon future.</p>
+<p>Date Added: 10/09/2020</p>
+<p>Member added: Jill Keller</p>
+<hr />
+<p>UN Environment Program</p>
+<p><a href="https://www.unep-wcmc.org/" class="uri">https://www.unep-wcmc.org/</a></p>
+<p>UN Environment Programme World Conservation Monitoring Centre is a
+world leader in biodiversity knowledge. It works with scientists and
+policy makers worldwide to place biodiversity at the heart of
+environment and development decision-making to enable enlightened
+choices for people and the planet.</p>
+<p>Date Added: 10/18/2020</p>
+<p>Member added: Bob Danielson</p>
+<hr />
+<p>NASA on Climate Change</p>
+<p><a href="https://climate.nasa.gov/" class="uri">https://climate.nasa.gov/</a></p>
+<p>Explore a real-time data visualization of NASA’s Earth-orbiting
+satellites and the data they collect about climate change.</p>
+<p>Date Added: 10/25/2020</p>
+<p>Member added: Ta Nguyen</p>
+<hr />
+<h1 id="comments">Comments</h1>
+<p>10/20/2020</p>
+<p>Nichole Bradey</p>
+<p>Climate.nasa.gov</p>
+<p>This site is gorgeous and useful. Well worth the time to visit and
+explore its features.</p>
+<hr />
+<p>10/22/2020</p>
+<p>Wendy Nelson</p>
+<p>I attended the Convention on Climate policy last year and it was
+quite enlightening. They had discussions from several high ranking
+scientists and politicians. Worth the price.</p>
+<hr />
+</body>
+</html>

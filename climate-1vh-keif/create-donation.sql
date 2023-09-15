@@ -1,0 +1,6 @@
+CREATE TABLE Donation (
+  ID INTEGER PRIMARY KEY NOT NULL,
+  Date DATE,
+  Amount INTEGER,
+  DonorID INTEGER
+);

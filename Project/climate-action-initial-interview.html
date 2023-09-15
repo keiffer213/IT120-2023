@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Steven Conger" />
+  <title>Climate Change Database Sample Interview</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Climate Change Database Sample Interview</h1>
+<p class="subtitle">IT 120 - Databases</p>
+<p class="author">Steven Conger</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#climate-change-database-sample-interview">Climate Change
+Database Sample Interview</a></li>
+</ul>
+</nav>
+<h1 id="climate-change-database-sample-interview">Climate Change
+Database Sample Interview</h1>
+<p>In this imagined interview, Hannah is in the role of the database
+designer tasked with deploying a database to help a grassroots
+organization interested in climate change.</p>
+<hr />
+<p><strong>Hannah:</strong> Thanks for meeting with me. The goal for
+today is to get an overview of the database. We don’t need to go into
+all the detail, just get a good general picture of what you need. What
+do you see as the main purpose of the database?</p>
+<p><strong>Megan:</strong> Our goal is to create a climate action site
+and we need the database to drive it.</p>
+<p><strong>Hannah:</strong> Ok, can you describe some of what you want
+to happen on that site?</p>
+<p><strong>Megan:</strong> Sure. We want to provide resources—links to
+sites and documents with useful information. We will  generate some
+materials of our own.  We also want to provide a calendar of events,
+some of which we will offer and some offered by other organizations and
+institutions. We want to suggest things people can do to make a
+difference.</p>
+<p><strong>Hannah:</strong> Are you anticipating any fundraising.</p>
+<p><strong>Megan:</strong> Yes, we are hoping to see items such as
+T-shirts, cups, books, posters, etc. to raise enough money to support
+the site. We will also take donations. Anyone that donates over 20
+dollars becomes a member automatically, though you do not have to donate
+to become a member.</p>
+<p><strong>Hannah:</strong> How do you anticipate the site operations?
+Can anyone contribute articles, or can only certain people? How do you
+think it will work?</p>
+<p><strong>Megan:</strong> We will want people to register in order to
+contribute articles or links to events. There will be a small staff that
+validates the links to make sure they are legitimate, and to oversee
+donations and such. People who register can agree to receive newsletters
+that will update them about new information on the side.</p>
+<p><strong>Hannah:</strong> Will only members be allowed to view the
+data?</p>
+<p><strong>Megan:</strong> No. Anyone should be able to view the
+resources and events and be able to buy merchandise or donate. Only
+members can contribute events or resources and only members can add
+comments.</p>
+<p><strong>Hannah:</strong> Oh, what will they be able to comment
+on?</p>
+<p><strong>Megan:</strong> Events and resources, mainly.</p>
+<p><strong>Hannah:</strong> OK. Is there anything else you want to
+add?</p>
+<p><strong>Megan:</strong> I can’t think of anything else at the
+moment.</p>
+<p><strong>Hannah:</strong> Well, if anything occurs to you: let me
+know,</p>
+</body>
+</html>
